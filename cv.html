@@ -2,73 +2,136 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Mon CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV de Lucas WIBAUX">
+  <meta name="author" content="Lucas WIBAUX">
 
+  <title>CV - Lucas WIBAUX</title>
+
+  <link rel="shortcut icon" href="assets/images/gt_favicon.png">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
   <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    .btn-download {
+      background-color: #0069d9;
+      border-color: #0062cc;
+      border-radius: 50px;
+      padding: 10px 25px;
+      font-weight: bold;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+      color: white;
+      text-decoration: none;
+    }
+  </style>
 </head>
-
 <body class="home">
-  <!-- Navbar chargée dynamiquement -->
-  <div id="navbar-placeholder"></div>
-  <script>
-    fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar-placeholder").innerHTML = data;
-      });
-  </script>
+    <div id="navbar-placeholder"></div>
+	<script>
+  		fetch("header.html")
+    		.then(response => response.text())
+    		.then(data => {
+      		document.getElementById("navbar-placeholder").innerHTML = data;
+      		// Réinitialise le dropdown Bootstrap sur le contenu injecté
+      		$('.dropdown-toggle').dropdown();
+    		});
+	</script>
 
-  <header id="head" class="secondary"></header>
+  <header id="head">
+    <div class="container">
+      <div class="row">
+        <h1 class="lead">Mon CV - Lucas WIBAUX</h1>
+        <p class="tagline">Etudiant en Réseaux et Télécommunications, passionné par les technologies de l'information</p>
+        <div class="text-center">
+          <a href="assets/pdf/CV_Lucas_WIBAUX.pdf" class="btn btn-download" target="_blank">
+            <i class="fa fa-file-pdf-o"></i> Télécharger mon CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <div class="container">
-    <ol class="breadcrumb">
-      <li><a href="index.html">Accueil</a></li>
-      <li class="active">CV</li>
-    </ol>
+    <div class="row">
+      <div class="col-md-6">
+        <h2><i class="fa fa-graduation-cap"></i> Formation</h2>
+        <ul>
+          <li><strong>BUT Réseaux et Télécommunications</strong> - IUT de Lens (2022 - 2025)</li>
+          <li><strong>Bac STI2D option SIN</strong> - Lycée Gustave Eiffel (2022)</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2><i class="fa fa-code"></i> Compétences Techniques</h2>
+        <ul>
+          <li><i class="fa fa-linux"></i> Administration Linux</li>
+          <li><i class="fa fa-docker"></i> Docker & virtualisation</li>
+          <li><i class="fa fa-code"></i> Programmation : Python, HTML/CSS, Bash</li>
+          <li><i class="fa fa-network-wired"></i> Réseaux : TCP/IP, VLAN, VPN</li>
+        </ul>
+      </div>
+    </div>
 
     <div class="row">
-      <article class="col-sm-12 maincontent">
-        <header class="page-header">
-          <h1 class="page-title">Curriculum Vitae</h1>
-        </header>
-
-        <p>Voici mon parcours professionnel et académique :</p>
-
-        <h3>Expériences professionnelles</h3>
+      <div class="col-md-6">
+        <h2><i class="fa fa-briefcase"></i> Expériences Professionnelles</h2>
         <ul>
-          <li><strong>2024 - Orange</strong> – Alternance en cybersécurité</li>
-          <li><strong>2023 - Entreprise X</strong> – Stage en réseau informatique</li>
+          <li><strong>Orange</strong> - Technicien Service Client à la production (Alternance, 2023-2025)</li>
         </ul>
-
-        <h3>Formations</h3>
+      </div>
+      <div class="col-md-6">
+        <h2><i class="fa fa-language"></i> Langues</h2>
         <ul>
-          <li><strong>2022-2025</strong> – Licence professionnelle en informatique</li>
-          <li><strong>2020-2022</strong> – BTS SIO</li>
+          <li><i class="fa fa-flag"></i> Français - Langue maternelle</li>
+          <li><i class="fa fa-flag-usa"></i> Anglais - Niveau B2</li>
         </ul>
+      </div>
+    </div>
 
-        <h3>Compétences</h3>
-        <ul>
-          <li>Linux, Docker, Proxmox, Git</li>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Réseaux, sécurité, virtualisation</li>
-        </ul>
-      </article>
+    <div class="row">
+      <div class="col-md-12">
+        <h2><i class="fa fa-user"></i> Qualités & Centres d'intérêt</h2>
+        <p>Sérieux, autonomie, curiosité technique. Passion pour l’auto-hébergement, la cybersécurité et les systèmes distribués.</p>
+      </div>
     </div>
   </div>
 
-  <footer id="footer">
+  <footer id="footer" class="top-space">
     <div class="footer2">
       <div class="container">
-        <p class="text-center">© 2025 Mon Nom - Tous droits réservés</p>
+        <div class="row">
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p class="simplenav">
+                <a href="index.html">Accueil</a> |
+                <a href="about.html">A propos</a> |
+                <a href="cv.html">CV</a> |
+                <a href="contact.html">Contact</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 widget">
+            <div class="widget-body">
+              <p class="text-right">&copy; 2025 Lucas WIBAUX</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/headroom.min.js"></script>
+  <script src="assets/js/jQuery.headroom.min.js"></script>
+  <script src="assets/js/template.js"></script>
 </body>
 </html>
