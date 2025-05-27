@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="home">
+  <!-- Navbar chargée dynamiquement -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <header id="head" class="secondary"></header>
+
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="index.html">Accueil</a></li>
+      <li class="active">CV</li>
+    </ol>
+
+    <div class="row">
+      <article class="col-sm-12 maincontent">
+        <header class="page-header">
+          <h1 class="page-title">Curriculum Vitae</h1>
+        </header>
+
+        <p>Voici mon parcours professionnel et académique :</p>
+
+        <h3>Expériences professionnelles</h3>
+        <ul>
+          <li><strong>2024 - Orange</strong> – Alternance en cybersécurité</li>
+          <li><strong>2023 - Entreprise X</strong> – Stage en réseau informatique</li>
+        </ul>
+
+        <h3>Formations</h3>
+        <ul>
+          <li><strong>2022-2025</strong> – Licence professionnelle en informatique</li>
+          <li><strong>2020-2022</strong> – BTS SIO</li>
+        </ul>
+
+        <h3>Compétences</h3>
+        <ul>
+          <li>Linux, Docker, Proxmox, Git</li>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Réseaux, sécurité, virtualisation</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer2">
+      <div class="container">
+        <p class="text-center">© 2025 Mon Nom - Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
