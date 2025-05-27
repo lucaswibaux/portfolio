@@ -28,12 +28,15 @@
 <body class="home">
 	<div id="navbar-placeholder"></div>
 	<script>
-	  fetch("header.html")
-		.then(response => response.text())
-		.then(data => {
-		  document.getElementById("navbar-placeholder").innerHTML = data;
-		});
+  		fetch("header.html")
+    		.then(response => response.text())
+    		.then(data => {
+      		document.getElementById("navbar-placeholder").innerHTML = data;
+      		// Réinitialise le dropdown Bootstrap sur le contenu injecté
+      		$('.dropdown-toggle').dropdown();
+    		});
 	</script>
+
 
 	<!-- Header -->
 	<header id="head">
