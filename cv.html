@@ -103,30 +103,15 @@
       </div>
     </div>
   </div>
-
-  <footer id="footer" class="top-space">
-    <div class="footer2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 widget">
-            <div class="widget-body">
-              <p class="simplenav">
-                <a href="index.html">Accueil</a> |
-                <a href="about.html">A propos</a> |
-                <a href="cv.html">CV</a> |
-                <a href="contact.html">Contact</a>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6 widget">
-            <div class="widget-body">
-              <p class="text-right">&copy; 2025 Lucas WIBAUX</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+	
+<div id="footer-placeholder"></div>
+	<script>
+	  fetch("footer.html")
+		.then(response => response.text())
+		.then(data => {
+		  document.getElementById("footer-placeholder").innerHTML = data;
+		});
+	</script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
