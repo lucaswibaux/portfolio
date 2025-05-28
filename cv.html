@@ -24,7 +24,6 @@
       color: white;
       transition: all 0.3s ease;
     }
-
     .btn-download:hover {
       background-color: #0056b3;
       transform: scale(1.05);
@@ -35,24 +34,23 @@
   </style>
 </head>
 <body class="home">
-    <div id="navbar-placeholder"></div>
-	<script>
-  		fetch("header.html")
-    		.then(response => response.text())
-    		.then(data => {
-      		document.getElementById("navbar-placeholder").innerHTML = data;
-      		// Réinitialise le dropdown Bootstrap sur le contenu injecté
-      		$('.dropdown-toggle').dropdown();
-    		});
-	</script>
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+        $('.dropdown-toggle').dropdown();
+      });
+  </script>
 
   <header id="head">
     <div class="container">
       <div class="row">
         <h1 class="lead">Mon CV - Lucas WIBAUX</h1>
-        <p class="tagline">Etudiant en Réseaux et Télécommunications, passionné par les technologies de l'information</p>
+        <p class="tagline">Alternant en Cybersécurité | Étudiant en BUT Réseaux & Télécommunications</p>
         <div class="text-center">
-          <a href="assets/pdf/CV_Lucas_WIBAUX.pdf" class="btn btn-download" target="_blank">
+          <a href="assets/pdf/CV_lucas_wibaux.pdf" class="btn btn-download" target="_blank">
             <i class="fa fa-file-pdf-o"></i> Télécharger mon CV
           </a>
         </div>
@@ -65,17 +63,28 @@
       <div class="col-md-6">
         <h2><i class="fa fa-graduation-cap"></i> Formation</h2>
         <ul>
-          <li><strong>BUT Réseaux et Télécommunications</strong> - IUT de Lens (2022 - 2025)</li>
-          <li><strong>Bac STI2D option SIN</strong> - Lycée Gustave Eiffel (2022)</li>
+          <li><strong>BUT Réseaux et Télécommunications</strong> – IUT de Béthune (2022 – 2025)
+            <ul>
+              <li>Gérer les infrastructures et services des réseaux opérateurs</li>
+              <li>Surveiller et administrer un système d’information sécurisé</li>
+              <li>Gérer les communications unifiées et la vidéo sur Internet</li>
+            </ul>
+          </li>
+          <li><strong>Baccalauréat Général</strong> – Lycée Gustave Eiffel (2022)
+            <ul>
+              <li>Mathématiques, Numérique & Sciences Informatiques</li>
+              <li>Physique-Chimie</li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="col-md-6">
         <h2><i class="fa fa-code"></i> Compétences Techniques</h2>
         <ul>
-          <li><i class="fa fa-linux"></i> Administration Linux</li>
-          <li><i class="fa fa-docker"></i> Docker & virtualisation</li>
-          <li><i class="fa fa-code"></i> Programmation : Python, HTML/CSS, Bash</li>
-          <li><i class="fa fa-network-wired"></i> Réseaux : TCP/IP, VLAN, VPN</li>
+          <li>TCP/IP, Routage, DHCP, MPLS</li>
+          <li>Python, HTML/CSS, Asterisk/SIP</li>
+          <li>Proxmox, Windows Server, Elasticsearch</li>
+          <li>Docker, Virtualisation, Sécurité Réseau</li>
         </ul>
       </div>
     </div>
@@ -84,41 +93,65 @@
       <div class="col-md-6">
         <h2><i class="fa fa-briefcase"></i> Expériences Professionnelles</h2>
         <ul>
-          <li><strong>Orange</strong> - Technicien Service Client à la production (Alternance, 2023-2025)</li>
+          <li><strong>Orange</strong> – Technicien Service Client (Alternance, 09/2023 – 08/2025)
+            <ul>
+              <li>Configuration routeurs Ekinops/Cisco</li>
+              <li>Assistance technique et validation client</li>
+              <li>Migrations, détection et résolution des dysfonctionnements</li>
+            </ul>
+          </li>
+          <li><strong>GSM WORLD</strong> – Stagiaire polyvalent (2019)
+            <ul>
+              <li>Gestion de stocks et commandes</li>
+              <li>Communication client & maintenance mobile</li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="col-md-6">
-        <h2><i class="fa fa-language"></i> Langues</h2>
+        <h2><i class="fa fa-laptop"></i> Projets personnels</h2>
         <ul>
-          <li><i class="fa fa-flag"></i> Français - Langue maternelle</li>
-          <li><i class="fa fa-flag-usa"></i> Anglais - Niveau B2</li>
+          <li><strong>VPN Site-to-Client</strong> : mise en place d’un VPN Wireguard sécurisé</li>
+          <li><strong>Serveur Cloud</strong> : installation de Nextcloud avec accès distant via VPN</li>
+        </ul>
+
+        <h2><i class="fa fa-certificate"></i> Certifications</h2>
+        <ul>
+          <li>Permis B</li>
+          <li>MOOC SecNumacadémie (ANSSI)</li>
         </ul>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-md-12">
-        <h2><i class="fa fa-user"></i> Qualités & Centres d'intérêt</h2>
-        <p>Sérieux, autonomie, curiosité technique. Passion pour l’auto-hébergement, la cybersécurité et les systèmes distribués.</p>
+      <div class="col-md-6">
+        <h2><i class="fa fa-language"></i> Langues</h2>
+        <ul>
+          <li><i class="fa fa-flag"></i> Français – Langue maternelle</li>
+          <li><i class="fa fa-flag-usa"></i> Anglais – Niveau B1</li>
+          <li><i class="fa fa-flag"></i> Espagnol – Niveau scolaire</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2><i class="fa fa-heart"></i> Centres d'intérêt</h2>
+        <p>VTT, sports automobiles, musique (DJ), voyage, cybersécurité, auto-hébergement.</p>
       </div>
     </div>
   </div>
-	
-<div id="footer-placeholder"></div>
-	<script>
-	  fetch("footer.html")
-		.then(response => response.text())
-		.then(data => {
-		  document.getElementById("footer-placeholder").innerHTML = data;
-		});
-	</script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<script src="assets/js/headroom.min.js"></script>
-	<script src="assets/js/jQuery.headroom.min.js"></script>
-	<script src="assets/js/template.js"></script>
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/headroom.min.js"></script>
+  <script src="assets/js/jQuery.headroom.min.js"></script>
+  <script src="assets/js/template.js"></script>
 </body>
 </html>
