@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SAÉ - Semestre 6 | Lucas WIBAUX</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAÉ - Semestre 6</title>
 
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap-theme.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="shortcut icon" href="assets/images/gt_favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <style>
 	section.top-space h2 {
 		border-bottom: 2px solid #ccc;
@@ -18,18 +20,16 @@
 </head>
 
 <body class="home">
-<!-- HEADER -->
-<div id="navbar-placeholder"></div>
-	<script>
-		fetch("header.html")
-			.then(response => response.text())
-			.then(data => {
-				document.getElementById("navbar-placeholder").innerHTML = data;
-				// Réinitialise le dropdown Bootstrap sur le contenu injecté
-				$('.dropdown-toggle').dropdown();
-			});
-	</script>
-
+  <!-- En-tête dynamique -->
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+        $('.dropdown-toggle').dropdown();
+      });
+  </script>
 
 
 
