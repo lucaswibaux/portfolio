@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
-	
-	<title>Left Sidebar template - Progressus Bootstrap template</title>
+	<meta name="author" content="Lucas WIBAUX">
+
+	<title>SAÉ - Semestre 5 | Lucas WIBAUX</title>
 
 	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
-	
+
 	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
 	<!-- Custom styles for our template -->
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
 	<link rel="stylesheet" href="assets/css/main.css">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,104 +24,354 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+	<style>
+		section.top-space h2 {
+			border-bottom: 2px solid #ccc;
+			padding-bottom: 8px;
+		}
+	</style>
 </head>
 
-<body>
 <body class="home">
-    <div id="navbar-placeholder"></div>
+	<!-- HEADER -->
+	<div id="navbar-placeholder"></div>
 	<script>
-  		fetch("header.html")
-    		.then(response => response.text())
-    		.then(data => {
-      		document.getElementById("navbar-placeholder").innerHTML = data;
-      		// Réinitialise le dropdown Bootstrap sur le contenu injecté
-      		$('.dropdown-toggle').dropdown();
-    		});
-	</script>
-	<header id="head" class="secondary"></header>
-
-	<!-- container -->
-	<div class="container">
-		
-		<ol class="breadcrumb">
-			<li><a href="index.html">Home</a></li>
-			<li class="active">Left Sidebar</li>
-		</ol>
-
-		<div class="row">
-			
-			<!-- Sidebar -->
-			<aside class="col-md-4 sidebar sidebar-left">
-
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, ratione delectus reiciendis nulla nisi pariatur molestias animi eos repellat? Vel.</p>
-					</div>
-				</div>
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
-						<p><img src="assets/images/1.jpg" alt=""></p>
-					</div>
-				</div>
-				<div class="row widget">
-					<div class="col-xs-12">
-						<h4>Lorem ipsum dolor sit</h4>
-						<p><img src="assets/images/2.jpg" alt=""></p>
-						<p>Qui, debitis, ad, neque reprehenderit laborum soluta dolor voluptate eligendi enim consequuntur eveniet recusandae rerum? Atque eos corporis provident tenetur.</p>
-					</div>
-				</div>
-
-			</aside>
-			<!-- /Sidebar -->
-
-			<!-- Article main content -->
-			<article class="col-md-8 maincontent">
-				<header class="page-header">
-					<h1 class="page-title">Lorem ipsum dolor sit amet, consectetur.</h1>
-				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, itaque, cumque, maxime obcaecati reprehenderit ea dignissimos amet voluptatem id excepturi facilis totam veritatis maiores eveniet neque explicabo temporibus quisquam in ex ab fugiat ipsa tempore sunt corporis nostrum quam illum!</p>
-				<p>Consectetur cupiditate labore repudiandae beatae nisi fugiat facilis natus illum vitae doloremque. In, perspiciatis, natus, impedit voluptas itaque odio repudiandae placeat nisi totam repellendus earum dolores mollitia tempore quasi beatae alias cum dicta maxime laborum corporis harum porro magnam laboriosam.</p>
-				<p>Aut, eaque, minus atque alias odio mollitia cum nisi ipsa nulla natus quae minima similique ipsam aspernatur molestias animi in deleniti nam. Tempora, labore, modi eum perspiciatis doloremque sequi nam illo corporis iusto maiores nisi recusandae repellat animi reiciendis accusamus.</p>
-
-				<h2>A, quibusdam, nobis, eveniet consequatur</h2>
-				<p>A, quibusdam, nobis, eveniet consequatur alias doloremque officia blanditiis fuga et numquam labore reiciendis voluptas quis repellat quos sunt non dolore consectetur at sit nam tenetur dolorem? Harum, quas, sit perspiciatis esse odit temporibus aperiam nulla aspernatur sequi fugiat tempore?</p>
-				<p>Ad velit consequuntur quo qui odit quam sapiente repudiandae et ea pariatur? Ex sapiente beatae nobis consectetur ea. Deleniti, beatae, magnam, dolorum, fuga nostrum quas laboriosam sapiente temporibus enim voluptates ullam impedit atque quae provident quos mollitia aperiam perferendis amet.</p>
-
-				<blockquote>Numquam, ut iure quia facere totam quas odit illo incidunt. Voluptatem, nostrum, ex, quasi incidunt similique cum maxime expedita unde labore inventore excepturi veniam corporis sequi facere ullam voluptates amet illum quam fuga voluptatibus ipsum atque sunt eos. Ut, necessitatibus.</blockquote>
-				<p>Odit, laudantium, dolores, natus distinctio labore voluptates in inventore quasi qui nobis quis adipisci fugit id! Aliquam alias ea modi. Porro, odio, sed veniam hic numquam qui ad molestiae sint placeat expedita? Perferendis, enim qui numquam sequi obcaecati molestiae fugiat!</p>
-				<p>Aperiam, odit, quasi, voluptate fugiat quisquam velit magni provident corporis animi facilis illo eveniet eum obcaecati adipisci blanditiis quas labore doloribus eos veniam repudiandae suscipit tempora ad harum odio eius distinctio hic deleniti. Sunt fuga ad perspiciatis repellat deleniti omnis!</p>
-
-				<h3>Numquam, ut iure quia facere totam quas odit illo incidunt</h3>
-				<p>Est, maiores, fuga sed nemo qui veritatis ducimus placeat odit quisquam dolorum. Rem, sunt, praesentium veniam maiores quia molestias eos fugit eaque ducimus veritatis provident assumenda. Quia, fuga, voluptates voluptatibus quis enim nam asperiores aliquam dignissimos ullam recusandae debitis iste.</p>
-				<p>Dignissimos, beatae, praesentium illum eos autem perspiciatis? Minus, non, tempore, illo, mollitia exercitationem tempora quas harum odio dolores delectus quidem laudantium adipisci ducimus ullam placeat eaque minima quae iure itaque corporis magni nesciunt eius sed dolor doloremque id quasi nisi.</p>
-			</article>
-			<!-- /Article -->
-
-		</div>
-	</div>	<!-- /container -->
-	
-	
-	<div id="footer-placeholder"></div>
-		<script>
-		  fetch("footer.html")
+		fetch("header.html")
 			.then(response => response.text())
 			.then(data => {
-			  document.getElementById("footer-placeholder").innerHTML = data;
+				document.getElementById("navbar-placeholder").innerHTML = data;
+				$('.dropdown-toggle').dropdown();
 			});
-		</script>
+	</script>
+
+	<!-- TITRE -->
+
+	<section class="top-space">
+		<div class="container">
+			<h1 class="text-center"><br>SAÉ - Semestre 5</h1>
+		</div>
+	</section>
+
+	<!-- CONTENU -->
+	<main class="container">
+
+		<section class="top-space">
+			<h2><i class="fa fa-desktop"></i> SAE 5.01 – Concevoir, réaliser et présenter une solution technique</h2>
+			<p>
+				Cette SAE avait pour objectif de concevoir, déployer et documenter une infrastructure de machines
+				virtuelles permettant aux étudiants d'accéder à distance à des environnements de travaux pratiques via
+				un navigateur web.
+			</p>
+
+			<h3>Objectifs pédagogiques</h3>
+			<ul>
+				<li>Déployer un hyperviseur (Proxmox) pour héberger plusieurs machines virtuelles thématiques.</li>
+				<li>Mettre en place un accès distant aux machines via une interface web sécurisée.</li>
+				<li>Documenter l’ensemble du déploiement et de la configuration des services utilisés.</li>
+				<li>Tester la robustesse de l’infrastructure et mettre en œuvre une supervision de base.</li>
+			</ul>
+
+			<h3>Organisation du projet</h3>
+			<p>
+				En trinôme, nous avons installé Proxmox sur un serveur physique avec plusieurs interfaces réseau, puis
+				créé différentes machines virtuelles (Linux, Windows, outils réseaux, etc.).
+				Pour permettre l’accès distant, nous avons intégré Apache Guacamole qui permet la prise en main des VM
+				via un simple navigateur web.
+			</p>
+
+			<h3>Travail réalisé</h3>
+			<ul>
+				<li>Installation de Proxmox et configuration des ressources matérielles (CPU, RAM, bridge réseau...)
+				</li>
+				<li>Déploiement de VM templates adaptées aux différents TP (Linux, réseau, outils d’analyse...)</li>
+				<li>Déploiement et configuration d’Apache Guacamole pour un accès sécurisé par navigateur</li>
+				<li>Tests de connexion, création de comptes utilisateurs et vérification de la stabilité</li>
+			</ul>
+
+			<h3>Limites et éléments non finalisés</h3>
+			<p>
+				Faute de temps, certaines fonctionnalités prévues initialement n’ont pas pu être finalisées :
+			</p>
+			<ul>
+				<li>Implémentation complète d’une supervision centralisée des VM</li>
+				<li>Automatisation complète des déploiements (scripts, playbooks Ansible)</li>
+				<li>Système de gestion des utilisateurs et journalisation avancée</li>
+			</ul>
+
+			<h3>Compétences mobilisées</h3>
+			<ul>
+				<li>Virtualisation avec Proxmox</li>
+				<li>Réseaux (bridge, VLANs, routage)</li>
+				<li>Déploiement web avec Apache Guacamole</li>
+				<li>Documentation technique claire et structurée</li>
+			</ul>
+
+			<h3>Bilan personnel</h3>
+			<p>
+				Ce projet m’a permis de comprendre les enjeux du déploiement d’une infrastructure mutualisée pour
+				l’enseignement. J’ai renforcé mes compétences en virtualisation, en réseau, et en accès distant
+				sécurisé.
+			</p>
+
+			<p class="top-space">
+				<a href="assets/docs/sae501_habibovic_leuliette_wibaux.pdf" class="btn btn-primary" download>
+					<i class="fa fa-download"></i> Rapport technique (PDF)
+				</a>
+			</p>
+		</section>
+
+		<!-- SAE 5.02 -->
+		<section class="top-space">
+			<h2>SAÉ 5.02 - Cycle de vie d’un projet informatique</h2>
+			<p>
+				Cette SAE avait pour objectif de mettre en pratique les principes de gestion de versions avec Git dans
+				le cadre d’un mini-projet en binôme. Le but était de rédiger une documentation en Markdown en respectant
+				un cycle de vie structuré, avec plusieurs branches de développement.
+			</p>
+
+			<h3>Objectifs pédagogiques</h3>
+			<ul>
+				<li>Appliquer les commandes Git vues en cours dans un contexte collaboratif.</li>
+				<li>Comprendre la structuration d’un projet logiciel versionné.</li>
+				<li>Apprendre à produire une documentation technique versionnée et maintenable.</li>
+			</ul>
+
+			<h3>Organisation du projet</h3>
+			<p>Le projet se déroulait en plusieurs étapes :</p>
+			<ol>
+				<li>
+					Création d’un dépôt Git contenant un <code>README.md</code> et un <code>CHANGELOG.md</code> vide sur
+					la branche <code>master</code>.
+				</li>
+				<li>
+					Ajout d’un répertoire <code>doc/</code> contenant :
+					<ul>
+						<li><code>Commandes.md</code> – Documentation des commandes Git vues en cours.</li>
+						<li><code>Nouveaute.md</code> – Présentation de fonctionnalités avancées non couvertes en cours
+							(hooks, alias, .gitignore).</li>
+					</ul>
+				</li>
+				<li>
+					Utilisation d’un modèle de branches structuré :
+					<ul>
+						<li>Une branche par membre (ex : <code>dev-nom</code>).</li>
+						<li>Une branche <code>dev</code> commune pour fusionner les contributions.</li>
+						<li>La branche <code>master</code> ne contient que les versions stables avec tag
+							<code>v1</code>, <code>v2</code>…
+						</li>
+					</ul>
+				</li>
+				<li>
+					Création des versions stables en fusionnant les branches dans <code>master</code> puis en ajoutant
+					un tag.
+				</li>
+			</ol>
+
+			<h3>Travail réalisé</h3>
+			<p>
+				Dans mon binôme, j’ai participé à la rédaction du fichier <code>Nouveaute.md</code> en documentant la
+				fonctionnalité suivante :
+			</p>
+			<ul>
+				<li><strong>Les hooks Git</strong> : j’ai expliqué leur utilité (exécuter des scripts automatiquement
+					lors d’événements Git) et donné un exemple de hook <code>pre-commit</code> qui vérifie le format des
+					messages de commit.</li>
+			</ul>
+			<p>
+				J’ai également contribué à la gestion des versions en effectuant les fusions dans la branche
+				<code>dev</code> et en mettant à jour le fichier <code>CHANGELOG.md</code> à chaque étape importante.
+			</p>
+
+			<h3>Compétences mobilisées</h3>
+			<ul>
+				<li>Utilisation avancée de Git et GitLab (branche, merge, conflits, tags).</li>
+				<li>Rédaction technique avec Markdown.</li>
+				<li>Travail collaboratif en binôme et gestion de projet logiciel.</li>
+			</ul>
+
+			<h3>Lien vers le projet</h3>
+			<p>
+				Le dépôt GitLab du projet est disponible à l'adresse suivante :
+				<a href="https://gitlab.univ-artois.fr/lucas_wibaux/projet_gitlab.git" target="_blank">
+					https://gitlab.univ-artois.fr/lucas_wibaux/projet_gitlab.git
+				</a>
+			</p>
+
+			<h3>Bilan personnel</h3>
+			<p>
+				Cette SAE m'a permis de renforcer ma compréhension de Git et de son utilisation dans un contexte
+				collaboratif. J'ai appris à structurer un projet avec des branches dédiées, à gérer les fusions et à
+				documenter les changements de manière claire. La rédaction en Markdown m'a également aidé à améliorer
+				mes compétences en documentation technique. Ce projet m'a donné une meilleure vision du cycle de vie
+				d'un projet informatique et de l'importance d'une bonne gestion de versions.
+			</p>
+
+
+		</section>
 
 
 
+		<section class="top-space">
+			<h2><i class="fa fa-phone"></i> SAE 4.ROM.01 – Déploiement d’un service VoIP et portail Web</h2>
+			<p>
+				Cette SAE avait pour objectif d’intégrer les services de téléphonie VoIP via Asterisk dans une interface
+				web et de développer une application de visioconférence via SIP.js.
+				Le projet a été réalisé en trinôme et s’est inscrit dans le cadre du parcours Réseaux Opérateurs et
+				Multimédia.
+			</p>
 
-	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+			<h3>Objectifs pédagogiques</h3>
+			<ul>
+				<li>Déployer une infrastructure VoIP fonctionnelle avec Asterisk sous Alpine Linux.</li>
+				<li>Configurer des téléphones IP physiques et leur permettre de communiquer.</li>
+				<li>Mettre en place une interface web avec SIP.js pour échanger en voix (et potentiellement vidéo).</li>
+				<li>Préparer l’intégration d’un portail complet de visioconférence.</li>
+			</ul>
+
+			<h3>Organisation du projet</h3>
+			<p>Le projet était structuré en 10 étapes progressives :</p>
+			<ol>
+				<li>Installation d’Asterisk sur Alpine Linux avec vérification de service.</li>
+				<li>Connexion de deux téléphones IP (Fanvil et Cisco) avec boîte vocale et numérotation personnalisée.
+				</li>
+				<li>Déploiement d’un serveur web Alpine, puis ajout d’une interface SIP.js basée sur les exemples
+					fournis par le site officiel.</li>
+				<li>Tests des appels SIP via navigateur, analyse des échanges avec Wireshark.</li>
+				<li>Préparation d’un portail unifié intégrant vidéo et messagerie (non finalisé).</li>
+			</ol>
+
+			<h3>Travail réalisé</h3>
+			<p>Nous avons pu finaliser les premières étapes, notamment :</p>
+			<ul>
+				<li>Création des comptes SIP dans <code>sip.conf</code> et configuration de la logique d’appel dans
+					<code>extensions.conf</code>.
+				</li>
+				<li>Connexion de téléphones physiques Fanvil/Cisco (avec serveur TFTP pour le Cisco).</li>
+				<li>Installation d’un serveur web léger (NGINX) et intégration d’un client SIP.js minimal.</li>
+				<li>Établissement de communications vocales entre deux navigateurs via WebRTC/SIP.js.</li>
+			</ul>
+
+			<h3>Limites et suite envisagée</h3>
+			<p>
+				Nous n’avons pas pu aller au bout du projet, notamment l’intégration de la vidéo, du chat ou de l’audit
+				de sécurité.
+				L'étape suivante aurait été d'étendre l’interface en une plateforme complète de visioconférence avec
+				authentification et chiffrement TLS.
+			</p>
+
+			<h3>Accès distant à l’infrastructure</h3>
+			<p>
+				Pour permettre l’accès à Proxmox et aux machines virtuelles depuis l’extérieur, une redirection NAT avec
+				IP publique a été mise en place ainsi que des règles de pare-feu pour filtrer les flux HTTP, SIP et RTP
+				nécessaires.
+			</p>
+
+			<h3>Compétences mobilisées</h3>
+			<ul>
+				<li>Déploiement VoIP (Asterisk, SIP)</li>
+				<li>Administration réseau et services sous Alpine Linux</li>
+				<li>Développement web embarqué (SIP.js, HTML/JS)</li>
+				<li>Analyse de paquets réseau (Wireshark)</li>
+			</ul>
+
+			<h3>Bilan personnel</h3>
+			<p>
+				Ce projet m’a permis de m’initier concrètement à la téléphonie sur IP, à l'intégration d’interfaces web
+				avec SIP.js et à l’utilisation de Proxmox comme hyperviseur. Malgré l’absence d’aboutissement complet,
+				j’ai acquis une bonne compréhension des protocoles VoIP et de leurs interactions avec les services web.
+			</p>
+
+			<p class="top-space">
+				<a href="assets/docs/habibovic_wibaux_sipjs.pdf" class="btn btn-primary" download>
+					<i class="fa fa-download"></i> Rapport technique (PDF)
+				</a>
+			</p>
+		</section>
+
+		<!-- SAE5.Cyber.03 -->
+		<section class="top-space">
+			<h2><i class="fa fa-shield"></i> SAE5.Cyber.03 - Assurer la sécurisation et la supervision avancées d'un
+				système d'information
+			</h2>
+			<hr />
+
+			<div class="row">
+				<div class="col-md-8">
+					<h3>Contexte du projet</h3>
+					<p>
+						Cette SAE visait à mettre en œuvre un système informatique via la suite ELK (Elasticsearch,
+						Logstash, Kibana), permettant d'identifier et analyser des événements issus de différents
+						équipements ou systèmes (Ubuntu, Apache, Cisco, pfSense).
+					</p>
+
+					<h3>Travaux réalisés</h3>
+					<ul>
+						<li>Installation et sécurisation d'Elasticsearch et Kibana</li>
+						<li>Ajout de sources : Filebeat pour Apache/Cisco, Metricbeat pour Ubuntu, Elastic Agent pour
+							pfSense</li>
+						<li>Analyse de journaux (logs système, accès web, événements réseau, traces d'attaques)</li>
+						<li>Configuration de dashboards Kibana et création d’alertes simples</li>
+					</ul>
+
+					<h3>Exemple</h3>
+					<ul>
+						<li><strong>Logs Apache :</strong> détection de requêtes (GET/POST), les differents codes
+							réponses http</li>
+						<li><strong>Ubuntu :</strong> collecte de métriques système (CPU, RAM, services actifs) avec
+							Metricbeat</li>
+						<li><strong>Cisco :</strong> permet de récupérer les logs d'un routeur par exemple un câble qui
+							a été débrancher</li>
+						<li><strong>pfSense :</strong> réception et visualisation de logs réseau via Elastic Agent cela
+							permet par exemple de voir si quelqu'un essaye d'accéder à un site bloqué</li>
+					</ul>
+
+					<h3>Compétences développées</h3>
+					<ul>
+						<li>Déploiement de solutions de supervision</li>
+						<li>Analyse de logs sur différents équipements/systèmes</li>
+						<li>Configuration sécurisée des agents Filebeat et Elastic Agent</li>
+						<li>Création et interprétation de dashboards Kibana</li>
+					</ul>
+
+					<h3>Bilan personnel</h3>
+					<p>
+						J’ai découvert l’importance d’une bonne supervision dans la détection des incidents. J’ai
+						progressé en administration système, gestion de logs et sécurité. Cette SAE m’a conforté dans
+						mon intérêt pour les métiers liés à la cybersécurité.
+					</p>
+
+					<p class="top-space">
+						<a href="assets/docs/R5.Cyber.11-WIBAUX_Lucas_RT3_APP.zip" class="btn btn-primary" download>
+							<i class="fa fa-download"></i> Rapport complet et preuves (ZIP)
+						</a>
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<img src="assets/images/elk-diagram.png" class="img-responsive img-thumbnail" alt="Diagramme ELK" />
+					<p class="text-muted text-center">Architecture ELK utilisée pour la supervision</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- FOOTER -->
+	<div id="footer-placeholder"></div>
+	<script>
+		fetch("footer.html")
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById("footer-placeholder").innerHTML = data;
+			});
+	</script>
+
+	<!-- JS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
 </body>
+
 </html>
