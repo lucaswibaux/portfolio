@@ -20,25 +20,23 @@
 <body class="home">
 <!-- HEADER -->
 <div id="navbar-placeholder"></div>
-<script>
-	fetch("header.html")
-		.then(response => response.text())
-		.then(data => {
-			document.getElementById("navbar-placeholder").innerHTML = data;
-			$('.dropdown-toggle').dropdown();
-		});
-</script>
+	<script>
+		fetch("header.html")
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById("navbar-placeholder").innerHTML = data;
+				// Réinitialise le dropdown Bootstrap sur le contenu injecté
+				$('.dropdown-toggle').dropdown();
+			});
+	</script>
 
-<!-- TITRE -->
 
-<section class="top-space">
-	<div class="container">
-		<h1 class="text-center"><br>SAÉ - Semestre 5</h1>
-	</div>
-</section>
 
 
   <main class="container">
+	  	<div class="container">
+		<h1 class="text-center"><br>SAÉ - Semestre 5</h1>
+	</div>
     <section class="top-space">
       <h2><i class="fa fa-eye"></i> SAE 6.ROM.01 – Réaliser une veille technologique</h2>
       <p>Ce projet avait pour objectif d'analyser les enjeux actuels de sécurité dans le domaine de l'Internet des Objets (IoT), en mettant l'accent sur les menaces existantes, les contre-mesures techniques, ainsi que les technologies émergentes en matière de cybersécurité. Réalisé en binôme, il s'inscrit dans une logique d'approfondissement des connaissances et de méthodologie de veille technologique.</p>
