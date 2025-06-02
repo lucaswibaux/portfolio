@@ -23,40 +23,104 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+
+	<style>
+		.btn-modern {
+		  padding: 12px 24px;
+		  font-size: 16px;
+		  border-radius: 8px;
+		  background-color: #007bff;
+		  border: none;
+		  color: #fff;
+		  transition: background-color 0.3s ease;
+		  text-transform: uppercase;
+		  font-weight: bold;
+		  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		.btn-modern:hover {
+		  background-color: #0056b3;
+		  text-decoration: none;
+		  color: white;
+		}
+	  </style>
 </head>
 
 <body class="home">
 	<div id="navbar-placeholder"></div>
 	<script>
-  		fetch("header.html")
-    		.then(response => response.text())
-    		.then(data => {
-      		document.getElementById("navbar-placeholder").innerHTML = data;
-      		// Réinitialise le dropdown Bootstrap sur le contenu injecté
-      		$('.dropdown-toggle').dropdown();
-    		});
+		fetch("header.html")
+			.then(response => response.text())
+			.then(data => {
+				document.getElementById("navbar-placeholder").innerHTML = data;
+				// Réinitialise le dropdown Bootstrap sur le contenu injecté
+				$('.dropdown-toggle').dropdown();
+			});
 	</script>
+
 
 
 	<!-- Header -->
 	<header id="head">
-		<div class="container">
-			<div class="row">
-				<h1 class="lead">Lucas WIBAUX</h1>
-				<p class="tagline">Actuellement étudiant en 3ème année de BUT Réseaux et Télécommunications 
-				<br>	et en alternance chez Orange en tant que Technicien Service Client à la production</p>
-			</div>
+		<div class="container text-center">
+			<h1 class="lead">Lucas WIBAUX</h1>
+			<p class="tagline">Étudiant en 3ᵉ année de BUT Réseaux et Télécommunications<br>Alternant chez Orange (Technicien Service Client à la production)</p>
+			<a href="cv.html" class="btn btn-modern">Voir mon CV</a>
 		</div>
 	</header>
 	<!-- /Header -->
+
 	<!-- Présentation -->
 	<div class="container text-center">
-		<br><br>
+		<br> <br>
 		<h2 class="thin">Bienvenue sur mon portfolio</h2>
 		<p class="text-muted">
 			Vous trouverez ici un aperçu de mes projets, compétences et expériences développées durant mon cursus universitaire et en entreprise.
 		</p>
 	</div>
+	<!-- /Présentation-->
+
+	<!-- Compétences -->
+	<div class="jumbotron top-space">
+		<div class="container">
+			<h3 class="text-center thin">Compétences principales</h3>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption">
+						<h4><i class="fa fa-terminal"></i> Administration Système</h4>
+					</div>
+					<div class="h-body text-center">
+						<p>Linux, services réseau, déploiement de serveurs et supervision (Zabbix, ELK).</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption">
+						<h4><i class="fa fa-cloud"></i> Réseaux</h4>
+					</div>
+					<div class="h-body text-center">
+						<p>Configuration Cisco, VPN, VLANs, pare-feux, routage, services d'infrastructure.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption">
+						<h4><i class="fa fa-github"></i> Git et projets</h4>
+					</div>
+					<div class="h-body text-center">
+						<p>Utilisation de Git, GitLab, gestion de branches, documentation en Markdown, CI/CD basique.</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 highlight">
+					<div class="h-caption">
+						<h4><i class="fa fa-globe"></i> Web et VoIP</h4>
+					</div>
+					<div class="h-body text-center">
+						<p>Développement HTML/CSS, SIP.js, portail RTC avec Asterisk, Apache/Nginx.</p>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+	
 	<div id="footer-placeholder"></div>	
 		<script>
 		  fetch("footer.html")
