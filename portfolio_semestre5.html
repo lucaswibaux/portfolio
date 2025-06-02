@@ -211,82 +211,63 @@
 
 
 
-		<section class="top-space">
-			<h2><i class="fa fa-phone"></i> SAE 4.ROM.01 – Déploiement d’un service VoIP et portail Web</h2>
-			<p>
-				Cette SAE avait pour objectif d’intégrer les services de téléphonie VoIP via Asterisk dans une interface
-				web et de développer une application de visioconférence via SIP.js.
-				Le projet a été réalisé en trinôme et s’est inscrit dans le cadre du parcours Réseaux Opérateurs et
-				Multimédia.
-			</p>
+		    <section class="top-space">
+      <h2><i class="fa fa-wrench"></i> SAE 5.ROM – Déploiement d’un service VoIP avec interface Web</h2>
+      <hr />
+      <p>
+        Cette SAE visait à intégrer les services de téléphonie IP avec Asterisk et à développer une interface web pour établir des communications VoIP à l’aide de SIP.js. Le projet s’inscrit dans le cadre du parcours Réseaux Opérateurs et Multimédia.
+      </p>
 
-			<h3>Objectifs pédagogiques</h3>
-			<ul>
-				<li>Déployer une infrastructure VoIP fonctionnelle avec Asterisk sous Alpine Linux.</li>
-				<li>Configurer des téléphones IP physiques et leur permettre de communiquer.</li>
-				<li>Mettre en place une interface web avec SIP.js pour échanger en voix (et potentiellement vidéo).</li>
-				<li>Préparer l’intégration d’un portail complet de visioconférence.</li>
-			</ul>
+      <h3>Objectifs pédagogiques</h3>
+      <ul>
+        <li>Déployer un serveur Asterisk sur Alpine Linux.</li>
+        <li>Configurer des téléphones IP Fanvil et Cisco pour des communications vocales.</li>
+        <li>Mettre en place une interface d’administration via HTTP.</li>
+        <li>Développer une interface SIP.js en Node.js permettant la communication voix (et potentiellement vidéo).</li>
+      </ul>
 
-			<h3>Organisation du projet</h3>
-			<p>Le projet était structuré en 10 étapes progressives :</p>
-			<ol>
-				<li>Installation d’Asterisk sur Alpine Linux avec vérification de service.</li>
-				<li>Connexion de deux téléphones IP (Fanvil et Cisco) avec boîte vocale et numérotation personnalisée.
-				</li>
-				<li>Déploiement d’un serveur web Alpine, puis ajout d’une interface SIP.js basée sur les exemples
-					fournis par le site officiel.</li>
-				<li>Tests des appels SIP via navigateur, analyse des échanges avec Wireshark.</li>
-				<li>Préparation d’un portail unifié intégrant vidéo et messagerie (non finalisé).</li>
-			</ol>
+      <h3>Travaux réalisés</h3>
+      <ul>
+        <li>Installation d’Asterisk sur Alpine Linux et démarrage du service.</li>
+        <li>Configuration des comptes SIP dans <code>sip.conf</code> et des boîtes vocales dans <code>voicemail.conf</code>.</li>
+        <li>Connexion de téléphones Fanvil (via interface web) et Cisco (via serveur TFTP).</li>
+        <li>Configuration d’une interface web d’administration avec redirection HTTP (port 8088) et création d’un utilisateur dans <code>manager.conf</code>.</li>
+        <li>Mise en place d’un serveur Node.js avec SIP.js et tentative d’échange via WebRTC.</li>
+      </ul>
 
-			<h3>Travail réalisé</h3>
-			<p>Nous avons pu finaliser les premières étapes, notamment :</p>
-			<ul>
-				<li>Création des comptes SIP dans <code>sip.conf</code> et configuration de la logique d’appel dans
-					<code>extensions.conf</code>.
-				</li>
-				<li>Connexion de téléphones physiques Fanvil/Cisco (avec serveur TFTP pour le Cisco).</li>
-				<li>Installation d’un serveur web léger (NGINX) et intégration d’un client SIP.js minimal.</li>
-				<li>Établissement de communications vocales entre deux navigateurs via WebRTC/SIP.js.</li>
-			</ul>
+      <h3>Limites rencontrées</h3>
+      <p>
+        Malgré les efforts investis, l’échange vocal via l’interface SIP.js n’a pas pu être finalisé. Nous avons rencontré plusieurs problèmes techniques, notamment :
+      </p>
+      <ul>
+        <li>Conflit de version avec Asterisk, résolu en changeant de version.</li>
+        <li>Problèmes de permissions sur les fichiers de configuration.</li>
+        <li>Communication inopérante entre le serveur SIP.js et le serveur Asterisk.</li>
+      </ul>
+      <p>
+        Faute de temps, il n’a pas été possible d’aboutir à une solution fonctionnelle, malgré des recherches approfondies.
+      </p>
 
-			<h3>Limites et suite envisagée</h3>
-			<p>
-				Nous n’avons pas pu aller au bout du projet, notamment l’intégration de la vidéo, du chat ou de l’audit
-				de sécurité.
-				L'étape suivante aurait été d'étendre l’interface en une plateforme complète de visioconférence avec
-				authentification et chiffrement TLS.
-			</p>
+      <h3>Compétences mobilisées</h3>
+      <ul>
+        <li>Déploiement de services VoIP avec Asterisk</li>
+        <li>Configuration d’équipements réseau (Fanvil, Cisco)</li>
+        <li>Administration de serveurs HTTP sous Alpine Linux</li>
+        <li>Développement web temps réel avec SIP.js et Node.js</li>
+        <li>Analyse réseau avec Wireshark</li>
+      </ul>
 
-			<h3>Accès distant à l’infrastructure</h3>
-			<p>
-				Pour permettre l’accès à Proxmox et aux machines virtuelles depuis l’extérieur, une redirection NAT avec
-				IP publique a été mise en place ainsi que des règles de pare-feu pour filtrer les flux HTTP, SIP et RTP
-				nécessaires.
-			</p>
+      <h3>Bilan personnel</h3>
+      <p>
+        Cette SAE m’a permis de découvrir en profondeur le fonctionnement d’Asterisk, les contraintes du WebRTC, et les étapes techniques pour intégrer une solution VoIP dans une interface web. Même si le projet n’a pu être finalisé, j’ai renforcé mes compétences en diagnostic réseau et en intégration de services sur serveur léger.
+      </p>
 
-			<h3>Compétences mobilisées</h3>
-			<ul>
-				<li>Déploiement VoIP (Asterisk, SIP)</li>
-				<li>Administration réseau et services sous Alpine Linux</li>
-				<li>Développement web embarqué (SIP.js, HTML/JS)</li>
-				<li>Analyse de paquets réseau (Wireshark)</li>
-			</ul>
-
-			<h3>Bilan personnel</h3>
-			<p>
-				Ce projet m’a permis de m’initier concrètement à la téléphonie sur IP, à l'intégration d’interfaces web
-				avec SIP.js et à l’utilisation de Proxmox comme hyperviseur. Malgré l’absence d’aboutissement complet,
-				j’ai acquis une bonne compréhension des protocoles VoIP et de leurs interactions avec les services web.
-			</p>
-
-			<p class="top-space">
-				<a href="assets/docs/habibovic_wibaux_sipjs.pdf" class="btn btn-primary" download>
-					<i class="fa fa-download"></i> Rapport technique (PDF)
-				</a>
-			</p>
-		</section>
+      <p class="top-space">
+        <a href="assets/docs/SaÃ©5_ROM_LEULIETTE_WIBAUX_HABIBOVIC.pdf" class="btn btn-primary" download>
+          <i class="fa fa-download"></i> Rapport technique (PDF)
+        </a>
+      </p>
+    </section>
 
 		<!-- SAE5.Cyber.03 -->
 		<section class="top-space">
